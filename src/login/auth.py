@@ -17,3 +17,6 @@ def create_jwt_token(data: dict):
     to_encode = data.copy()
     to_encode.update({"exp": expire})
     return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+
+
+export default 
